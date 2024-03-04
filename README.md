@@ -70,3 +70,27 @@ DBCREATOR: Os usuários com essa função podem criar, alterar, excluir e restau
 BULKADMIN: Essa função permite aos usuários executar operações de importação/exportação em massa e executar operações BULK INSERT.
 
 Além disso, é importante notar que essas funções de servidor são fixas e não podem ser alteradas. Cada função tem um conjunto específico de permissões que não podem ser alteradas. No entanto, você pode adicionar ou remover usuários dessas funções conforme necessário.
+
+Funções de Banco de Dados no SQL Server
+
+O SQL Server possui várias funções de banco de dados que permitem aos usuários gerenciar diferentes aspectos dos bancos de dados. Aqui estão algumas dessas funções e suas responsabilidades:
+
+dbowner: Os membros dessa função têm controle total do banco de dados. Eles podem executar tarefas de gerenciamento de banco de dados, criar, modificar ou excluir objetos do banco de dados e conceder permissões a outros usuários.
+
+db_datareader: Essa função permite aos membros ler qualquer tabela em um banco de dados específico.
+
+db_datawriter: Os membros dessa função têm permissão para modificar dados em qualquer tabela em um banco de dados específico.
+
+db_executor: Essa função permite aos membros executar qualquer procedimento armazenado no banco de dados.
+
+db_ddladmin: Os membros dessa função têm permissão para executar qualquer comando DDL (Data Definition Language) em um banco de dados específico.
+
+db_securityadmin: Essa função permite aos membros gerenciar permissões no banco de dados.
+
+db_accessadmin: Os membros dessa função têm permissão para gerenciar a atribuição de permissões para usuários e funções.
+
+db_backupoperator: Os membros dessa função têm permissão para realizar backups de banco de dados.
+
+db_datareader e db_datawriter: Os membros dessa função combinada têm permissão para ler e modificar dados em qualquer tabela em um banco de dados específico.
+
+Além disso, é importante notar que essas funções de banco de dados são fixas e não podem ser alteradas. Cada função tem um conjunto específico de permissões que não podem ser alteradas. No entanto, você pode adicionar ou remover usuários dessas funções conforme necessário. Isso permite uma gestão eficaz e segura dos bancos de dados
