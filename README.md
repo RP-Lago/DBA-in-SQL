@@ -48,3 +48,25 @@ CREATE LOGIN [MICRO-DESKTOP\user_user] FROM WINDOWS;
 15. **Conecte-se ao SQL Server com o Usuário do Windows**: Volte para a caixa de diálogo que teve o erro. Clique em "Ok" e depois em "Conectar". Você deve conseguir se conectar ao SQL Server com o usuário user_user do Windows.
 
 Agora você aprendeu como criar um usuário do próprio SQL Server e do Windows. Para continuar com os próximos exercícios, feche a caixa de diálogo do usuário user_user e do usuário.
+
+Funções de Servidor no SQL Server
+
+O SQL Server possui várias funções de servidor que permitem aos usuários gerenciar diferentes aspectos do servidor e dos bancos de dados. Aqui estão algumas dessas funções e suas responsabilidades:
+
+SYSADMIN: Os usuários com essa função têm controle total sobre o servidor e todos os objetos do banco de dados. Eles podem realizar qualquer operação no servidor.
+
+SECURITYADMIN: Essa função permite aos usuários gerenciar funções de servidor, logins e permissões. Eles podem conceder, negar e revogar permissões no servidor.
+
+SERVERADMIN: Os usuários com essa função podem alterar as configurações do servidor e gerenciar o servidor como um todo.
+
+SETUPADMIN: Essa função permite aos usuários gerenciar as instalações do SQL Server. Eles podem adicionar ou remover recursos do SQL Server.
+
+PROCESSADMIN: Os usuários com essa função podem gerenciar processos em execução no servidor. Eles podem terminar processos que estão consumindo muitos recursos.
+
+DISKADMIN: Essa função permite aos usuários gerenciar os discos associados ao SQL Server. Eles podem adicionar ou remover discos do servidor.
+
+DBCREATOR: Os usuários com essa função podem criar, alterar, excluir e restaurar bancos de dados.
+
+BULKADMIN: Essa função permite aos usuários executar operações de importação/exportação em massa e executar operações BULK INSERT.
+
+Além disso, é importante notar que essas funções de servidor são fixas e não podem ser alteradas. Cada função tem um conjunto específico de permissões que não podem ser alteradas. No entanto, você pode adicionar ou remover usuários dessas funções conforme necessário.
